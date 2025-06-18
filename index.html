@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Burning Man</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/tuw5lez.css">
+  <link rel="stylesheet" href="https://use.typekit.net/tuw5lez.css">
 </head>
 <body>
 
   <header>
-    <div class="logo"><img src="img-index/logo bm.png" alt="" width="30px"></div>
+    <a href="/index.html" class="logo">
+      <img src="/img-index/logo bm.png" alt="Logo Burning Man" width="30px">
+    </a>
     <nav>
       <ul>
-        <li class="link"><a href="#">QUÉ ES</a></li>
-        <li class="link"><a href="#">GUÍA</a></li>
-        <li class="link"><a href="#">ESTILO</a></li>
+        <li class="link"><a href="/sections/que-es.html">QUÉ ES</a></li>
+        <li class="link"><a href="/sections/guia.html">GUÍA</a></li>
+        <li class="link"><a href="/sections/estilo.html">ESTILO</a></li>
       </ul>
     </nav>
   </header>
@@ -29,7 +30,7 @@
         <h1><span>BIENVENIDO AL</span><br><span>DESIERTO</span></h1>
         <p>Una guía para entender, vivir y transformarte en Burning Man.</p>
         <p>¿Es tu primer Burning Man?</p>
-        <button>EMPEZÁ ACÁ</button> 
+        <a href="/sections/guia.html"> <button class="button-index">EMPEZÁ ACÁ</button> </a>
       </div>
     </section>
 
@@ -51,18 +52,26 @@
     <!-- Formulario abajo de todo -->
     <section class="formulario">
       <h2>¿QUERÉS ENTRAR AL CÍRCULO?</h2>
-      <div class="switch">
-        <div class="circulo">X</div>
-        <div class="texto">sí</div>
-      </div>
+    
+      <!-- Botón tipo switch -->
+      <label class="custom-toggle">
+        <input type="checkbox" id="toggleSwitch" />
+        <span class="track">
+          <span class="label-no">NO</span>
+          <span class="thumb"></span>
+          <span class="label-si">SÍ</span>
+        </span>
+      </label>
+    
       <p class="descripcion">
         Sumate a la lista. Nada de spam, solo lo importante.<br />
         (eventos, fechas clave, data secreta)
       </p>
+    
       <form>
         <input type="text" placeholder="Nombre" />
         <input type="email" placeholder="Correo" />
-        <button type="submit">SER PARTE</button>
+        <button class="button-index" type="submit">SER PARTE</button>
       </form>
     </section>
   </main>
